@@ -31,7 +31,7 @@ public:
                   uint32_t dac_frequency = 400000);
 
 private:
-  Adafruit_I2CDevice *i2c_dev = NULL;
+ Adafruit_I2CDevice i2c_dev{0x0, nullptr};
 };
 
 #endif
